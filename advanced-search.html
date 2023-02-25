@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/advanced.css" />
+    <title>Google</title>
+  </head>
+
+  <body>
+    <div>
+      <header>
+          <ul>
+            <li class="link-list-item">
+              <a href="index.html">
+                <button class="button" type="button">Search</button>
+              </a>
+            </li>
+            <li class="link-list-item">
+              <a href="images-search.html">
+                <button class="button" type="button">Images</button>
+              </a>
+            </li>
+          </ul>
+      </header>
+
+      <div>
+        <h1 class="appbar">Advanced Search</h1>
+      </div>
+
+
+      <form action="http://www.google.ee/search" style="margin: -30px 0 0 420px;">
+          <table>
+              <header>
+                  <tr>
+                      <th>Parametres:</th>
+                      <th></th>
+                      <th>Information:</th>
+                  </tr>
+              </header>
+              <body>
+                  <tr>
+                  <td>Words:</td>
+                  <td><input class="input-text" type="text" name="as_q" /></td>
+                  <td>Words for search.</td>
+                  </tr>
+
+                  <tr>
+                      <td>Main words:</td>
+                      <td><input class="input-text" type="text" name="as_epq" /></td>
+                      <td>Main words for search.</td>
+                  </tr>
+
+                  <tr>
+                      <td>Any words</td>
+                      <td><input class="input-text" type="text" name="as_oq"/></td>
+                      <td>Any words for search</td>
+                  </tr>
+
+                  <tr>
+                      <td>Not words</td>
+                      <td><input class="input-text" type="text" name="as_eq" /></td>
+                      <td>Words, which forbidden</td>
+                  </tr>
+              </body>
+          </table>
+        <input class="button" type="submit"  value="Search" style="margin: 20px 0 0 500px;"/>
+      </form>
+
+    </div>
+  </body>
+</html>
